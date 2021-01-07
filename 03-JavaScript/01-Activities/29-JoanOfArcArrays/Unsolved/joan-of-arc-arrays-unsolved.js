@@ -9,3 +9,5 @@ var joanOfArcInfoValues = [
   "Took an arrow to the shoulder and a crossbow bolt to the thigh while trying to liberate Paris.",
   "Stands for French unity and nationalism."
 ];
+
+console.log("Her " + (joanOfArcInfoValues[0] + "is" + joanOfArcInfoValues[0]));

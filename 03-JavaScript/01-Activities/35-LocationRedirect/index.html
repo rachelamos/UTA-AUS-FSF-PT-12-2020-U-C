@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if (window.navigator.userAgent.includes("Mac")) {
+        //     alert("Welcome, User on a mac!");
+        // } else if (window.navigator.userAgent.includes("windows")) {
+        //     alert("Welcome, User on a Windows!");
+        // }
+        
+
+        var successFn = function (position) {
+            console.log('Success!: ', position);
+        };
+        var errFn = function (err) {
+            console.log('Error!: ', err);
+        };
+
+        console.log(window.navigator.geolocation.getCurrentPosition(successFn, errFn)
+
+
+    </script>
+</body>
+</html>

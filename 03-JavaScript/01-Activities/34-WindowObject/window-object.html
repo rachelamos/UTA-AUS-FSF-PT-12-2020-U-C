@@ -8,30 +8,30 @@
     <h1>Open the console to see the magic!</h1>
 
     <script>
-      // Inspect this object in Chrome's dev tools. Notice anything familiar?
-      console.log(window);
+      // // Inspect this object in Chrome's dev tools. Notice anything familiar?
+      // console.log(window);
 
-      // We can access many properties and methods from this window object
-      console.log(window.screen.width);
-      console.log(window.location.href);
+      // // We can access many properties and methods from this window object
+      // console.log(window.screen.width);
+      // console.log(window.location.href);
 
-      // Some methods we've already used; we just don't necessarily have to write "window"
-      // window.alert("Hello");
+      // // Some methods we've already used; we just don't necessarily have to write "window"
+      // // window.alert("Hello");
 
-      function firstFunction() {
-        // The window object is global, so it can be read from within any function
-        console.log(window.screen.width);
-      }
+      // function firstFunction() {
+      //   // The window object is global, so it can be read from within any function
+      //   console.log(window.screen.width);
+      // }
 
-      firstFunction();
+      // firstFunction();
 
-      function secondFunction(window) {
-        // But in this case, our parameter has the same name as a global variable, so it will take priority
-        // Maybe we shouldn't be naming our parameters "window..."
-        console.log(window);
-      }
+      // function secondFunction(window) {
+      //   // But in this case, our parameter has the same name as a global variable, so it will take priority
+      //   // Maybe we shouldn't be naming our parameters "window..."
+      //   console.log(window);
+      // }
 
-      secondFunction("Hello");
+      // secondFunction("Hello");
 
       // The same rule applies to our own variables
       var food = "Pizza";
