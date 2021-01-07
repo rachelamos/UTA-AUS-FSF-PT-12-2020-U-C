@@ -26,7 +26,29 @@ function prepareRead() {
 }
 
 function speedRead() {
-  //Add Your Code Here
+  var count = words.length - 1;
+
+  var timeInterval = setInterval(function() {
+    mainEl.textContent = words[count];
+    count --;
+
+    if (count ==0) {
+      clearInterval(timeInterval);
+    }
+  }, 1000);
+}
+
+function speedRead() {
+  mainEl.appendChild(bodyEl);
+  var poemInterval = setInterval(
+    function() {
+      if (words[i] === undefined) {
+        clearInterval(poemInterval);
+      } else {
+        mainEl.textContent = words[i]
+      }
+    }
+  )
 }
 
 prepareRead();

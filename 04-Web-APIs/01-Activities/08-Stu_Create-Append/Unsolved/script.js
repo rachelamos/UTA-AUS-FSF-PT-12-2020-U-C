@@ -27,6 +27,10 @@ body.appendChild(favoriteEl);
 favoriteEl.appendChild(listEl);
 // Append ordered list 
 favoriteEl.appendChild(listEl);
+listEl.appendChild(li1);
+listEl.appendChild(li2);
+listEl.appendChild(li3);
+listEl.appendChild(li4);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -34,5 +38,21 @@ imgEl.setAttribute("src", "http://placekitten.com/200/300");
 nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
+listEl.setAttribute("style", "background-color: #333333; padding: 20px;")
 
 // TODO: Add ordered list items containing four favorite foods
+li1.textContent = "Milk";
+li2.textContent = "Fish";
+li3.textContent = "Birds";
+li4.textContent = "Catnip";
+
+
+li1.setAttribute
+
+
+
+// `#333333` and padding of `20px`.
+
+// * It's done when each list item has a font color of `white`, padding of `5px`, and `margin-left` of `35px`.
+
+// * It's done when each list item has a different background color.
