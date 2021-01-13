@@ -20,18 +20,18 @@ function renderLastGrade() {
   var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
   // Check if data is returned, if not exit out of the function
   if (lastGrade !== null) {
-  document.getElementById("saved-name").innerHTML = lastGrade.student;
-  document.getElementById("saved-grade").innerHTML = lastGrade.grade;
-  document.getElementById("saved-comment").innerHTML = lastGrade.comment;
+    document.getElementById("saved-name").innerHTML = lastGrade.student;
+    document.getElementById("saved-grade").innerHTML = lastGrade.grade;
+    document.getElementById("saved-comment").innerHTML = lastGrade.comment;
   } else {
     return;
   }
 }
 
 saveButton.addEventListener("click", function(event) {
-event.preventDefault();
-saveLastGrade();
-renderLastGrade();
+  event.preventDefault();
+  saveLastGrade();
+  renderLastGrade();
 });
 
 // The init() function fires when the page is loaded 
