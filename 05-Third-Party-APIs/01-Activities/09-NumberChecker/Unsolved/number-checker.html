@@ -70,8 +70,21 @@
               // Add code to have the computer guess a random number between 1 and 4
               // Then determine which button was clicked
               // Compare the computer and user guess
-              // Inform the user if the've guessed correctly or incorrectly
+              // Inform the user if they've guessed correctly or incorrectly
+              // for (let i = 0; i < 3; i++) {
+                var computerPick = Math.floor(Math.random() * 4) + 1;
+                console.log("Your random number is " + computerPick);
 
+                var one = $("#button-1").val();
+                var two = $("#button-2").val();
+                var three = $("#button-3").val();
+                var four = $("#button-4").val();
+
+                if (one === computerPick || two === computerPick || three === computerPick || four === computerPick) {
+                  $("#result").text("You won!");
+                } else {
+                  $("#result").text("You lost!");
+                }
             });
           });
 
