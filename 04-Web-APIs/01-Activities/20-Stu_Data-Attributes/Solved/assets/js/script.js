@@ -18,6 +18,7 @@ container.addEventListener("click", function(event) {
       element.textContent= "";
       // Use .setAttribute() method
       element.setAttribute("data-state", "hidden")
+      // or element.dataset.state = "hidden";
      
     }  
   }
