@@ -16,6 +16,7 @@
 
     console.log(this);
 
+    // bc this is in the global scope, it will print 'window'
 
     // EXAMPLE TWO:
     // --------------------------------------------------
@@ -25,6 +26,8 @@
       console.log(this);
     }
     myFunction();
+
+    // bc it has to go up the scope, it will hit global and print 'window'
 
     // EXAMPLE THREE (IMPORTANT):
     // --------------------------------------------------
@@ -37,6 +40,8 @@
       }
     };
     someObj.say();
+
+    // Red Hat
 
 
     // EXAMPLE FOUR (BONUS, TRICKY!):
