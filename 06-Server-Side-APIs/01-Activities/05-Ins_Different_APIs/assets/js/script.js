@@ -1,6 +1,7 @@
 var requestUrl = 'https://api.github.com/users';
 
 //Browser XMLHttpRequest, built in the browser and require more code.
+// old way
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
   if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -12,6 +13,7 @@ xhr.open('GET', requestUrl);
 xhr.send();
 
 // AJAX call requires a third party library, jQuery
+// new way; must wire jQuery into project. use fetch if you don't have jQuery yet
 $.ajax({
   url: requestUrl,
   method: 'GET',
