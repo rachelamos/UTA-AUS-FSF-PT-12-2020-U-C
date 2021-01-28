@@ -9,3 +9,5 @@ fetch('https://api.github.com/repos/nodejs/node/issues?per_page=5', {
   .then(function (data) {
     console.log(data);
   });
+
+  // search: fetch api options

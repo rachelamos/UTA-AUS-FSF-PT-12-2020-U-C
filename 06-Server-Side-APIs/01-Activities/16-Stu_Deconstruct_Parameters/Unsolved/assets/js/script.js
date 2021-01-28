@@ -9,3 +9,8 @@ fetch(
     console.log(data);
   });
 // Parameter explanation.
+// per_page = how many will show per page
+// state = whether issue is open or closed
+// sort = sort by when created
+// direction = newest first
+/* after the ? is the query string value => per_page10&state=open&sort=created&direction=desc */
