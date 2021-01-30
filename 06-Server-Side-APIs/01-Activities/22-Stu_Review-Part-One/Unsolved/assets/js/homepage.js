@@ -22,6 +22,7 @@ var formSubmitHandler = function (event) {
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
   // TODO: Write your answer here
+  // like an on click. where clicked, "get" the attribute data-language
   var language = event.target.getAttribute('data-language');
 
   // Why is this `if` block in place?
@@ -56,6 +57,7 @@ var getUserRepos = function (user) {
 var getFeaturedRepos = function (language) {
   // What are the query parameters doing here?
   // TODO: Write your answer here
+  // q, sort
   var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
 
   fetch(apiUrl).then(function (response) {
