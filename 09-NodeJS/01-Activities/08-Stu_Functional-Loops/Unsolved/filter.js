@@ -22,11 +22,14 @@ const isPrime = num => {
   return num !== 1;
 };
 
+// console.log(isPrime);
+// console.log(num);
+
 
 // TODO: Describe how filter is working in this example. What will the value of primeArray be? 
 const primeArray = originalArray.filter(isPrime);
-
+console.log('primeArray: ', primeArray);
 
 // TODO: Describe how filter is working in this example. What will the value of moreThan5Array be? 
 const moreThan5Array = originalArray.filter(num => num > 5);
-
+console.log('moreThan5Array: ', moreThan5Array);
