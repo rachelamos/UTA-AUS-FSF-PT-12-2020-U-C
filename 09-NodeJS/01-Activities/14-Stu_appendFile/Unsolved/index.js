@@ -1,5 +1,6 @@
 // TODO: What are we importing?
 const fs = require('fs');
+// the file system
 
 // TODO: Add comments to explain each of the three arguments of appendFile()
 fs.appendFile('log.txt', `${process.argv[2]}\n`, (err) =>
