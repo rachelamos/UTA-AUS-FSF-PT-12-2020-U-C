@@ -1,7 +1,7 @@
-// Require/import the HTTP module
+// Require/import the HTTP module; this is built into Node
 const http = require('http');
 
-// Define a port to listen for incoming requests
+// Define a port to listen for incoming requests; all caps means it's an environment variable
 const PORT = 8080;
 
 // Create a generic function to handle requests and responses
