@@ -1,0 +1,23 @@
+{
+  "name": "UTA-AUS-FSF-PT-12-2020-U-C",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachelamos/UTA-AUS-FSF-PT-12-2020-U-C.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachelamos/UTA-AUS-FSF-PT-12-2020-U-C/issues"
+  },
+  "homepage": "https://github.com/rachelamos/UTA-AUS-FSF-PT-12-2020-U-C#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
