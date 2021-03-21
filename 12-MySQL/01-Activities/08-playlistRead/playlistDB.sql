@@ -16,7 +16,7 @@ INSERT INTO songs (title, artist, genre)
 VALUES ("Sky Blue Sky", "Wilco", "American Rock");
 
 INSERT INTO songs (title, artist, genre)
-VALUES ("Reptillia", "The Strokes", "Indie Rock";
+VALUES ("Reptillia", "The Strokes", "Indie Rock");
 
 INSERT INTO songs (title, artist, genre)
 VALUES ("Tree Fingers", "Radiohead", "Alt Rock");
