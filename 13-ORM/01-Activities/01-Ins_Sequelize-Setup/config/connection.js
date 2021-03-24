@@ -4,10 +4,12 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize(
   // Database name
   'library_db',
-  // User
-  'root',
-  // Password
-  'myPassword',
+  process.env.DB_USER,
+  process.env.DB_PASS,
+  // // User
+  // 'root',
+  // // Password
+  // 'myPassword',
   {
     // Database location
     host: 'localhost',

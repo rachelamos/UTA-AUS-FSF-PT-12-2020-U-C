@@ -2,6 +2,7 @@ const router = require('express').Router();
 const Book = require('../../models/Book');
 
 // TODO: Add a comment describing the purpose of this route
+// returning the book data
 router.get('/', (req, res) => {
   // TODO: Add a comment describing the functionality of this method
   Book.findAll().then((bookData) => {
