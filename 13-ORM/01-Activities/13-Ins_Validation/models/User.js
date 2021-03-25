@@ -13,6 +13,9 @@ User.init(
     },
     username: {
       type: DataTypes.STRING,
+      validate: {
+        isNull: false,
+      }
     },
     email: {
       type: DataTypes.STRING,
@@ -21,10 +24,14 @@ User.init(
       // checks for email format (foo@bar.com)
       validate: {
         isEmail: true,
+        notNull: true,
       },
     },
     password: {
       type: DataTypes.STRING,
+      validate: {
+        notNull: true,
+      }
     },
   },
   {
