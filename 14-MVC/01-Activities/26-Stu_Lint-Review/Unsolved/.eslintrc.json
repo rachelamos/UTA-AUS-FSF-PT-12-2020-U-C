@@ -9,6 +9,8 @@
   },
   "rules": {
     // TODO: Add rule to disallow setting variables to undefined
+    "prefer-exponentiation-operator": "error",
+    "no-undefined": "error",
     "no-duplicate-case": "error",
     "no-empty": "error",
     "no-extra-semi": "error",
