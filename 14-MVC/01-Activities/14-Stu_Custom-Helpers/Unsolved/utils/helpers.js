@@ -13,3 +13,11 @@ module.exports = {
     return fulldate;
   }
 };
+
+/* OR
+
+format_date: (date) => {
+  return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${newDate(date).getFullYear() +5}
+}
+
+*/

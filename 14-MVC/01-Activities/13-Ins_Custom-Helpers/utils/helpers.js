@@ -5,3 +5,17 @@ module.exports = {
     return date.toLocaleTimeString();
   },
 };
+
+
+/* OR
+
+const format_time = (date) => {
+    // We use the 'toLocaleTimeString()' method to format the time as H:MM:SS AM/PM
+    return date.toLocaleTimeString();
+};
+
+module.exports = {
+  format_time
+};
+
+*/
