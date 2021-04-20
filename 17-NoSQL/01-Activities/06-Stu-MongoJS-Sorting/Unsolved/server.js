@@ -52,7 +52,7 @@ app.get("/weight", (req, res) => {
 
 // 3: Heaviest Animal
 app.get("/heavy", (req, res) => {
-  db.animals.find({$max: "weight"}, (err, data) => {
+  db.animals.find().sort({weight: -1}).limit(1, (err, data) => {
     if (err) {
       console.log(err);
     } else {
