@@ -32,6 +32,16 @@ app.get("/", (req, res) => {
 // POST: /submit
 // ===========================================
 
+app.post("/submit", (req, res) => {
+  db.notes.insert(req.body, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(data);
+    }
+  });
+});
+
 // 2. Retrieve all notes from the database's collection
 // GET: /all
 // ====================================================
