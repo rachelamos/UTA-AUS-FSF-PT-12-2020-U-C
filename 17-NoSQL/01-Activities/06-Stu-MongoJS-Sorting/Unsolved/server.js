@@ -61,6 +61,17 @@ app.get("/heavy", (req, res) => {
   });
 });
 
+// 4. Heaviest Animal with $max
+app.get("/heaviest", (req, res) => {
+  db.animals.find().max( "weight", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(data);
+    }
+  });
+});
+
 // Set the app to listen on port 3000
 app.listen(3000, () => {
   console.log("App running on port 3000!");

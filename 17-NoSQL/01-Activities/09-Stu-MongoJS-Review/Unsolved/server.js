@@ -41,7 +41,9 @@ app.post("/submit", ({ body }, res) => {
 });
 
 // Find all books marked as read
-app.get("/read", (req, res) => {});
+app.get("/read", (req, res) => {
+  db.books.find(req.book.red, true)
+});
 
 // Find all books marked as unread
 app.get("/unread", (req, res) => {});
