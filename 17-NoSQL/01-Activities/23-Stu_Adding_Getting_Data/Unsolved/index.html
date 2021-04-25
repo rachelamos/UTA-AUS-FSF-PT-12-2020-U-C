@@ -13,13 +13,37 @@
       
       request.onupgradeneeded = event => {
         const db = event.target.result;
-       // CODE HERE
+        
+        // Creates an object store with a listID keypath that can be used to query on.
+        const toDoListStore = db.createObjectStore("toDoList", {keyPath: "listID"});
+        // Creates a statusIndex that we can query on.
+        toDoListStore.createIndex("dueDateIndex", "duedate"); 
       }
 
       
       request.onsuccess = () => {
         const db = request.result;
-        // CODE HERE
+        const transaction = db.transaction(["toDoList"], "readwrite");
+        const toDoListStore = transaction.objectStore("toDoList");
+        const dueDateIndex = toDoListStore.index("dueDateIndex");
+  
+        // Adds data to our objectStore
+        toDoListStore.add({ listID: "1", status: "yesterday" });
+        toDoListStore.add({ listID: "2", status: "today" });
+        toDoListStore.add({ listID: "3", status: "tomorrow" });
+        toDoListStore.add({ listID: "4", status: "today" });
+       
+        // Return an item by keyPath
+        const getRequest = toDoListStore.get("2");
+        getRequest.onsuccess = () => {
+          console.log(getRequest.result);
+        };
+
+        // Return an item by index
+        const getRequestIdx = dueDateIndex.getAll();
+        getRequestIdx.onsuccess = () => {
+          console.log(getRequestIdx.result); 
+        }; 
       };
 
     </script>

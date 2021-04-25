@@ -13,4 +13,10 @@
 <script>
 
 // CODE HERE
+const request = indexedDB.open("newDatabase", 1);
+  
+  // This returns a result that we can then manipulate.
+  request.onsuccess = event => {
+    console.log(request.result.name);
+  };
 </script>
