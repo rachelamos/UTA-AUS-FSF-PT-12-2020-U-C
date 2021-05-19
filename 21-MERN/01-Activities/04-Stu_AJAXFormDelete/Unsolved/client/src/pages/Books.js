@@ -28,16 +28,22 @@ function Books() {
       .catch(err => console.log(err));
   };
 
-  function handleInputChange() {
+  function handleInputChange(event) {
     // add code to control the components here
+    const { name, value} = event.target;
+    setFormObject({...formObject, [name]: value})
   }
 
   function handleFormSubmit() {
     // add code here to post a new book to the api
   }
 
-  function deleteBook() {
+  function deleteBook(id) {
     // add code here to remove a book using API
+    API.deleteBook(id)
+      .then(res => loadBooks()
+      )
+      .catch(err => console.log(err));
   }
 
     return (

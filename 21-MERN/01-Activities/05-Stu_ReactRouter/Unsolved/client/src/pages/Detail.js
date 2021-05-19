@@ -11,8 +11,9 @@ function Detail() {
   // e.g. http://localhost:3000/books/:id
   // The book id for this route can be accessed using the useParams hook
   // from react-router-dom.
-  useEffect(() => {
-    API.getBook(/* book id should be passed here */)
+  const {id} = useParams();
+  useEffect((id) => {
+    API.getBook(id)
       .then(res => setBook(res.data))
       .catch(err => console.log(err));
   }, [])

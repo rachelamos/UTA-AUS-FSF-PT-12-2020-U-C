@@ -64,7 +64,7 @@ function App() {
         </Row>
         <Row>
           <Col size="xs-12">
-            <h1>Render Recipes Here</h1>
+            <h1><RecipeList /></h1>
           </Col>
         </Row>
       </Container>

@@ -13,7 +13,7 @@ function Books() {
       loadBooks();
     }, []);
 
-    function loadBooks() {
+    function loadBooks(props) {
       // Add code here to get all books from the database and store them using setBooks
     }
 
