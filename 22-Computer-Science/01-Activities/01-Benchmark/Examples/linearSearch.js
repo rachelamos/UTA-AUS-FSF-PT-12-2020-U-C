@@ -4,7 +4,7 @@ var generate = require("../shared/generate");
 
 
 // Generate an array of the given length.
-var length = 100000000;
+var length = 1000000000;
 var stuff = generate(length);
 var randomValue = stuff[Math.ceil(Math.random() * length)];
 
